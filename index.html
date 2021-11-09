@@ -1,0 +1,95 @@
+<!--メインページHTML　ここからいろいろなURLに飛ぶ感じで-->
+<html lang="ja">
+    <head>
+
+        <meta charset="UTF-8">
+        <title>KOSENSTUDY</title>
+        <link rel="stylesheet" href="mainpage.css">
+
+    </head>
+
+    <body>
+        <div class="wrap">
+            <!--header-->
+            <header>
+                <div class="page-header">
+
+                </div>
+                
+                <div class="obi">
+                </div>
+                
+            </header>
+
+            <div class="container">
+               
+                <!--サイドバー-->
+                <div class="sidebar">
+                    <!--固定サイドバー-->
+                    <div class="sidebar_item">
+                        <!--時計-->
+                        <div class="clock">
+                            <p class="clock-date"></p>
+                            <p class="clock-time"></p>
+                        </div>
+
+                    </div>
+
+                    <!--追従サイドバー-->
+                    <div class="sidebar_item sidebar_item_fixed">
+                        <h1 class="sub-title">カテゴリー</h1>
+                        <div class="sub-menu">
+                            <div class="menu-single1">
+                                <input id="tg1" class="dropInput1" type="checkbox">
+                                <label for="tg1" class="dropLabel">電気回路</label>
+                                <div class="menu-second-level1">
+                                    <li><a class="item" href="../教材/電気回路/ohms_law.html">オームの法則</a></li>
+                                    <li><a class="item" href="#">キルヒホッフの法則</a></li>
+                                    <li><a class="item" href="#">テブナンの定理</a></li>
+                                </div>
+                            </div>
+                            <div class="menu-single2">
+                                <input id="tg2" class="dropInput2" type="checkbox">
+                                <label for="tg2" class="dropLabel">電磁気学</label>
+                                <div class="menu-second-level2">
+                                    <li><a class="item" href="#">クーロンの法則</a></li>
+                                    <li><a class="item" href="#">電磁誘導</a></li>
+                                    <li><a class="item" href="#">Child MENU2</a></li>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!--メイン記事をここに記入-->
+                <main class="article">
+                    <h1>このサイトについて</h1>
+                    <p1>KOSEN STUDYでは、高専で学ぶ内容が中心となっております。特に、電気分野の基本を掲載しているので、電気分野の辞書のように利用していただと便利です。</p>
+                    <p1>また、問題を解くための動画や例題も掲載しているので、分からない時に活用してみてください。</p>
+                    <p1>本科を目指す学生にはとても便利になっております。今後、さらに電気分野の公式、解き方、動画を掲載していく予定です。</p>
+
+    
+                    <h2>お知らせ</h2>
+                   
+                    <div class="news">
+                         <!--ここにお知らせを記入-->
+                        <p>2021/11/09　メインページ完成！！</p>
+
+                    </div>
+                </main>
+            </div>
+
+            <footer class="footer">
+                <p>４年社会実装６班（玉田班）</p>
+            </footer>
+            
+        </div>
+
+        <!-- JavaScriptファイル読み込みはここから -->
+        <!--時計-->
+        <script src="../clock.js"></script>
+
+    </body>
+
+</html>
