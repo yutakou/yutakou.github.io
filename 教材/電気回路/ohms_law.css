@@ -1,0 +1,155 @@
+/*文字コード指定*/
+@charset "UTF-8";
+/*bodyの部分*/
+body{
+    margin: 0px;
+}
+
+.wrap{
+    min-height: 100vh;
+    position: relative;
+    padding-bottom:120px;
+    box-sizing: border-box;
+}
+
+/*ヘッダー部分*/
+header{
+    text-align: center;
+}
+    
+.container{
+    display: -webkit-flex;
+    display: flex;
+}
+
+/*記事部分*/
+.article{
+    display: block;
+    width: 90%;
+    margin-right: 20px;
+    background-color: rgb(255, 161, 247);
+    
+}
+
+
+/*お知らせの記事部分*/
+.news{
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 90%;
+    height: 300px;
+    overflow: auto;
+    border:crimson 5px solid;
+    background-color: ghostwhite;
+}
+
+/*サイドバー*/
+
+/*サイドバー　時計部*/
+/* 時計の共通スタイル */
+.clock {
+  font-family: 'Share Tech Mono', monospace;
+  color: #daf6ff;
+  text-shadow: 0 0 10px #0aafe6;
+  text-align: center;
+  padding: 1px 0;
+}
+  
+  /* 日付のスタイル */
+.clock-date {
+  font-size: 25px;
+}
+  
+  /* 時間のスタイル */
+.clock-time {
+  font-size: 25px;
+}
+
+
+
+
+/*サイドバー　時計部ここまで*/
+  
+.sidebar{
+    width:320px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.sidebar_item{
+    height: 127px;
+    margin-bottom: 20px;
+    background-color: rgb(8, 37, 35);
+}
+
+.sidebar_item_fixed{
+    position: sticky;
+    margin-bottom: 0;
+    top: 10px;
+    z-index: 1;
+    background-color: yellow;
+}
+
+.sub-menu > li.menu-single {
+  position: relative;
+}
+/*チェックボックスの四角の表示*/
+#tg {
+  display: none;
+}
+/*チェックボックスの設定*/
+.menu-second-level {
+  position: relative;
+  visibility: hidden;
+  opacity: 0;
+  top: -10px;
+  list-style: none;
+}
+/*チェックボックスONの場合*/
+.dropInput:checked ~ .menu-second-level {
+  visibility: visible;
+  opacity: 1;
+  top: 0;
+}
+/*選択肢の設定*/
+.dropLabel, .item {
+  padding: 1em 1.5em;
+  display: block;
+  background-color: #fff;
+  text-align: center;
+  position: relative;
+  color: #333;
+  text-decoration: none;
+}
+/*チェックボックス内の色*/
+.item:hover {
+  background-color: #3CB371;
+  color: #fff;
+}
+/*チェックボックスの色*/
+.dropLabel:hover, .dropInput:checked + label {
+  background: #008B8B;
+  color: #fff;
+}
+/*表示アニメーション*/
+.animation {
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -ms-transition: all .3s;
+  transition: all .3s;
+}
+
+/*フッター*/
+footer{
+    background: black;
+    height: 20px;
+    width: 100%;
+    text-align: center;
+    padding: 26px 0;
+    color: white;
+    font-size: 0.0875rem;
+    position: absolute;
+    bottom: 0;
+}
+
+

@@ -1,0 +1,60 @@
+使えそうなコードとか書き方とか投げとくと便利やぞ（HTML)
+
+・便利コード集
+必須コード
+<html>~</html>
+<head>~</head>
+<title>~</title>
+<body>~</body>
+見出し
+<h1>~</h1>
+<h2>~</h2>
+…
+段落を表す
+<p>~</p>
+強調する
+<em>~</em>,<strong>~</strong>
+
+
+ブロックレベルの要素　文とか書くときに使う
+<div>~</div>,<span>~</span>
+全体の背景画像を設定する
+<body background="画像のURL">~</body>
+
+画像にテキストを割り込ませる
+<img src="URL"alt"代替テキスト"align="位置">
+
+他のページにリンクする
+<a href="リンク先URL"> ~ </a>
+
+関連する他のページを示す
+ rel このページから見た、URLで示したページとの関係
+ rev　URLで示したページから見た、このページとの関係
+<link rel="関係"href="URL">
+<link rev="関係"href="URL">
+フォントの基本サイズを指定する
+<basefont size="サイズ">
+
+マーク付きのリストを作る
+<ul>リスト項目１<li>
+<ul type="マークの種類">~</ul>
+<li type="マークの種類">~</li>
+番号付きのリストを作る
+<ol>
+<li>リスト項目1</li>
+</ol>
+フォームを作る
+<from action="URL" method="送信形式"
+　　　enctype="MIMEタイプ"
+      target="ウィンドウ名">
+</from>
+MIMEタイプには、mulitipart/from-dataを指定すると良い
+
+
+
+・HTMLコメントアウトの方法
+<!--ここにコメントを入力-->
+
+
+
+
